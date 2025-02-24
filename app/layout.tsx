@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import "./globals.css";
+
+import { ClerkProvider } from "@clerk/nextjs";
+import './globals.css';
+import { Toaster } from "@/components/ui/sonner";
+import { QueryProviders } from "@/providers/query-provider";
+import { SheetProvider } from "@/providers/sheet-provider";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -24,12 +29,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+<ClerkProvider>
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <QueryProviders>
+          <SheetProvider/>
+          <Toaster />
         {children}
+        </QueryProviders>
       </body>
     </html>
+    </ClerkProvider>
   );
 }
