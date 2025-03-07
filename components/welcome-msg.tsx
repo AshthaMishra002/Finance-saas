@@ -8,7 +8,7 @@ export const WelcomeMsg = () => {
   if (!isLoaded) return null;
 
   return (
-    <div className="absolute left-8 top-40"> {/* Force to left */}
+    <div className="space-y-2 mb-4"> {/* Force to left */}
       <h2 className="text-2xl lg:text-4xl text-white font-medium">
         Welcome Back, {user?.firstName} 😸
       </h2>

@@ -15,6 +15,20 @@
       "when": 1739974785123,
       "tag": "0001_talented_gunslinger",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1740659504363,
+      "tag": "0002_careful_whiplash",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1740733876903,
+      "tag": "0003_absent_susan_delgado",
+      "breakpoints": true
     }
   ]
 }
