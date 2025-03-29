@@ -15,7 +15,7 @@ type Props= {
     headers: string[];
     body: string[][];
     selectedColumns: Record<string, string | null>;
-    onTableHeadSelectChange: (ColumnIndex: number, value: string | null) => void;
+    onTableHeadSelectChange: (columnIndex: number, value: string | null) => void;
 }
 export const ImportTable = ({
     headers,

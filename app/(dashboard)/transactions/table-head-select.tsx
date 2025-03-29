@@ -15,7 +15,7 @@ type Props ={
     columnIndex: number;
     selectedColumns: Record<string, string | null>;
     onChange: (
-        ColumnIndex: number,
+        columnIndex: number,
         value: string | null
     ) => void;
 };
@@ -49,8 +49,7 @@ export const TableHeadSelect = ({
                         <SelectContent>
                             <SelectItem  value="skip"> Skip </SelectItem>
                             {options.map((option, index) => {
-                                const disabled= Object.values(selectedColumns)
-                                .includes(option) && selectedColumns[`column_${columnIndex}`] !== option;
+                                const disabled= Object.values(selectedColumns).includes(option) && selectedColumns[`column_${columnIndex}`] !== option;
                                 return (
                                 <SelectItem
                                 key={index}

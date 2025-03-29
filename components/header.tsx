@@ -3,6 +3,7 @@ import { Navigation } from "@/components/navigation";
 import { HeaderLogo } from "@/components/header-logo";
 import { Loader2 } from "lucide-react";
 import { WelcomeMsg } from "./welcome-msg";
+import { Filters } from "./filters";
 
 export const Header = () => {
   return (
@@ -24,6 +25,7 @@ export const Header = () => {
         </div>
         <div>
           <WelcomeMsg />
+          <Filters />
         </div>
       </div>
     </header>

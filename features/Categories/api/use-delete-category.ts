@@ -29,7 +29,7 @@ export const useDeleteCategory = (id?:string) => {
             queryClient.invalidateQueries({queryKey: ["transactions"]});
 
 
-            //ivalidate summary 
+            queryClient.invalidateQueries({queryKey: ["summary"]});
 
         },
         onError: () => {

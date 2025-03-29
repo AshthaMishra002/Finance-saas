@@ -53,6 +53,7 @@ const deleteTransactions = useBulkDeleteTransactions();
 const transactionsQuery = useGetTransactions();
 const transactions = transactionsQuery.data || [];
 
+
 const isDisabled =
 transactionsQuery.isLoading ||
 deleteTransactions.isPending;
@@ -76,7 +77,7 @@ const onSubmitImport = async (
             onCancelImport();
         },
     });
-};
+}; 
 
 if (transactionsQuery.isLoading) {
     return (
