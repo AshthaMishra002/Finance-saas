@@ -8,7 +8,9 @@ import {
     TableHeader,
     TableRow,
 } from "@/components/ui/table";
-import { Column } from "drizzle-orm";
+// import { Column } from "drizzle-orm";
+
+
 import { TableHeadSelect } from "./table-head-select";
 
 type Props= {

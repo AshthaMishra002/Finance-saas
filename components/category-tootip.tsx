@@ -1,5 +1,5 @@
-import { format } from "date-fns";
 import { formatCurrency } from "@/lib/utils";
+import { format } from "date-fns";
 
 import { Separator } from "./ui/separator";
 

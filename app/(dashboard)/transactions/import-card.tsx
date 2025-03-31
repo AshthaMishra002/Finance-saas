@@ -11,7 +11,8 @@
             import { Button } from "@/components/ui/button";
             import { useState } from "react";
             import { ImportTable } from "./import-table";
-            import { array } from "zod";
+            // import { array } from "zod";
+
             import { convertAmountToMiliunits } from "@/lib/utils";
             const requiredOptions = [
                 "amount",
@@ -26,6 +27,8 @@
             type Props = {
                 data: string[][];
                 onCancel: () => void;
+                // eslint-disable-next-line @typescript-eslint/no-explicit-any
+
                 onSubmit: (data: any) => void;
             };
 
