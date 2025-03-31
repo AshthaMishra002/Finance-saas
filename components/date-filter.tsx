@@ -59,10 +59,10 @@ export const DateFilter = ()=>{
             },{skipEmptyString:true, skipNull:true,});
             router.push(url);
         };
-        const onReset = () =>{
-            setDate(undefined);
-            pushToUrl(undefined);
-        };
+        // const onReset = () =>{
+        //     setDate(undefined);
+        //     pushToUrl(undefined);
+        // };
     return(
         <div>
             <Popover>
@@ -92,7 +92,7 @@ export const DateFilter = ()=>{
                     <div className="p-4 w-full flex items-center gap-x-2"></div>
                     <PopoverClose>
                         <Button
-                        onClick={(onReset=>pushToUrl(date))}
+                        onClick={() => pushToUrl(date)}
                         disabled={!date?.from || !date?.to}
                         className="w-full"
                         >

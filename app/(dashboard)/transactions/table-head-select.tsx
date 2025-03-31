@@ -1,4 +1,4 @@
-import { Column } from "drizzle-orm";
+// import { Column } from "drizzle-orm";
 
 import {cn} from "@/lib/utils";
 import {
@@ -9,7 +9,7 @@ import {
     SelectValue,
 
 } from "@/components/ui/select"
-import { DiscAlbum } from "lucide-react";
+// import { DiscAlbum } from "lucide-react";
 
 type Props ={
     columnIndex: number;

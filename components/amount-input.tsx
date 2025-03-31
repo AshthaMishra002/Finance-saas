@@ -8,7 +8,7 @@ import {
     TooltipProvider,
     TooltipTrigger
 } from "@/components/ui/tooltip";
-import { Placeholder } from "drizzle-orm";
+// import { Placeholder } from "drizzle-orm";
 
 type Props ={
     value: string;
