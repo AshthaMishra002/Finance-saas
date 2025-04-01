@@ -29,4 +29,4 @@ export const DELETE = handle(app)
 
 
 
-export type AppType = typeof routes;
+export type AppType = typeof app;

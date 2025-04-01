@@ -14,6 +14,7 @@ import { AccountColumn } from "./account-column";
 import { CategoryColumn } from "./category-column copy";
 
 
+
 export type ResponseType = InferResponseType<typeof client.api.transactions.$get, 200>["data"][0];
 
 export const columns: ColumnDef<ResponseType>[] = [
